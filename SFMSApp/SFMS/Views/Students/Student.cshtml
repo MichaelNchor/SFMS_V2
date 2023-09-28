@@ -1,0 +1,37 @@
+﻿@model IEnumerable<SFMS.Models.Stage>
+
+<a href="/Search"><< back</a>
+@if (ViewBag.student != null)
+{
+<div class="card rounded w-100 h-50 p-2" style="background-image: url(../../img/knust.jpg); background-blend-mode: luminosity">
+    <div class="" style="width:200px">
+      <img src="@Url.Action("GetImage", "Students")" class="card rounded h-100 w-100" alt="preview" />
+        <div class="card card-body rounded-0">
+            <h4 class="card-title">@ViewBag.student.surname @ViewBag.student.othername</h4>
+            <p class="card-text">@ViewBag.student.studentid</p>
+        </div>
+    </div>
+</div>
+<div class="container text-center my-2">
+    <div class="row row-cols-5">
+        @foreach(var stage in Model){
+            <a class="col btn btn-outline-primary text-sm text-wrap p-1" asp-action="Stage" asp-controller="Students" asp-route-id="@ViewBag.id" asp-route-slug="@stage.Slug">
+                <img src="~/img/stages/@stage.IconPath" class="my-2 rounded w-auto h-50" alt="preview">
+                <br /> 
+                <label class="text-sm-center text-xs m-1">@stage.Name</label>
+            </a>
+        }
+    </div>
+    </div>
+}
+else
+{
+    <div class="card">Loading...</div>
+}
+
+<style>
+    .btn-outline-primary{
+        border-color: rgba(0,0,0,.125);
+        color: rgba(0,0,0,0.6);
+    }
+</style>

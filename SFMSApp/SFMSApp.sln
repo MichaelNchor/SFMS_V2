@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SFMS", "SFMS\SFMS.csproj", "{022D610E-6402-4F27-BEF5-4AC0AA8DF384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFMS.API", "SFMS.API\SFMS.API.csproj", "{D8B56AF5-C35E-4168-A4B4-59EB187D8F29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{022D610E-6402-4F27-BEF5-4AC0AA8DF384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022D610E-6402-4F27-BEF5-4AC0AA8DF384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022D610E-6402-4F27-BEF5-4AC0AA8DF384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022D610E-6402-4F27-BEF5-4AC0AA8DF384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B56AF5-C35E-4168-A4B4-59EB187D8F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B56AF5-C35E-4168-A4B4-59EB187D8F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B56AF5-C35E-4168-A4B4-59EB187D8F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B56AF5-C35E-4168-A4B4-59EB187D8F29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF7C9FC8-EB2E-4A54-A9E5-788CFBA59D17}
+	EndGlobalSection
+EndGlobal

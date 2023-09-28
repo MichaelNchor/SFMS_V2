@@ -1,0 +1,19 @@
+﻿@model SFMS.Models.Query
+
+@{
+    ViewData["Title"] = "Search Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search.</h1>
+</div>
+<div class="card">
+<form method="post" asp-action="Search">
+    <div class="input-group mt-12">
+        <input asp-for="StudentNumber" class="form-control" type="text" placeholder="Search" aria-label="Search" value="@ViewBag.query">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </div>
+    </div>
+</form>
+</div>

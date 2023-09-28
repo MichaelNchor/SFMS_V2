@@ -1,0 +1,14 @@
+﻿<a href="/Search"><< back</a>
+
+@if (ViewBag.student != null)
+{
+    <img src="@Url.Action("GetImage", "Students")" class="my-2 rounded" style="width: 150px" alt="preview" />
+    @foreach(var key in ViewBag.Keys){
+    <div class="input-group mb-3">
+      <span class="input-group-text" style="font-weight: bold" id="@ViewBag.student[key]">@key</span>
+    <input type="text" class="form-control" value="@ViewBag.student[key]" aria-describedby="@ViewBag.student[key]" disabled>
+    </div>
+}
+}else{
+    <div>loading...</div>
+}
